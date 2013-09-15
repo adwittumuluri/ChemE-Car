@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+    <!--ChemE Car-->
+    <html>
+        <head>
+			<link type = 'text/css' rel = 'stylesheet' href = 'main.css'/>
+			<script type='text/javascript' src="http://code.jquery.com/jquery-latest.js"></script>            
+			<script type='text/javascript' src="http://www.bitstorm.org/jquery/shadow-animation/jquery.animate-shadow.js"></script>
+			<script type='text/javascript' src="http://www.bitstorm.org/jquery/color-animation/jquery.animate-colors.js"></script>
+			<script type='text/javascript' src="http://malsup.github.com/jquery.cycle.all.js"></script>
+			<script type="text/javascript" src="main.js"></script>
+			<title>Cornell University ChemE Car</title>
+		</head>
+    
+    <!--BODY-->    
+	<body style = "background-color: black">
+	    	    
+<!-----------------------------WEBSITE GENERAL LAYOUT----------------------------->
+	    <!--WRAPPER FOR ENTIRE SITE-->
+	    <div id = "webwrapper">
+
+            
+		<!--TOP BAR-->
+		<img id = "headerbanner" src = "embellishments/watermark.jpg">
+		<img id = "seal" src = "embellishments/seal.jpg" >
+		<div id  = "titlewrapper">
+			<img id = "ChemE-id" src = "embellishments/ChemECarLogo.jpg">
+		</div>
+		
+		<!--SEARCH BAR-->
+		<div id="search-form">
+		<form action="http://www.cornell.edu/search/" method="get" enctype="application/x-www-form-urlencoded">
+			<div id="search-input">
+			<label for="search-form-query">SEARCH CORNELL:</label>
+							<input type="text" id="search-form-query" name="q" value="" size="20" />
+				<input type="submit" id="search-form-submit" name="submit" value="go" />
+			</div>
+			<div id="search-filters">
+				<input type="radio" id="search-filters1" name="tab" value="" checked="checked" />
+				<label for="search-filters1">Pages&nbsp;</label>
+				<input type="radio" id="search-filters2" name="tab" value="people" />
+				<label for="search-filters2">People</label>
+				<a href="http://www.cornell.edu/search/">&nbsp;&nbsp;More Options</a>
+			</div>	
+		</form>
+		</div>  
+		
+		<!--TOP BLACK BAR-->
+		<div class = "horizbar" style="top: 150px;"></div>
+            
+	    <!--SLIDE SHOW IN BACKGROUND-->
+        <div id = "slideshowshadow"></div>
+	    <div id = "slideshow">
+			<img src = "slideshowpics/pic4.jpg"/>
+			<img src = "slideshowpics/pic1.jpg">
+			<img src = "slideshowpics/pic2.jpg"/>
+			<img src = "slideshowpics/pic3.jpg"/>
+			<img src = "slideshowpics/pic5.jpg"/>
+			<img src = "slideshowpics/pic6.jpg"/>
+        </div>
+
+	    <!--CAPTIONS FOR SLIDESHOW-->
+        <div id = "captionshow">
+		<div>ChemE Car</div>
+		<div>The Team</div>
+		<div>The Fuel Cell Car</div>
+		<div>2012 Regionals</div>
+		<div>Beakers</div>
+		<div>Club Fest</div>
+	    </div>
+            
+	    
+            
+            <!--NAVIGATION BAR + INDICATORS-->
+	    <div id="navside"><div></div></div>
+            <div id = "navbarcontainer">
+                
+		<div id = "activelight"></div>
+                
+
+                <!--HOME TAB-->
+                <div class ="navelement navelementwhite" id = "home"><span class = "navcentered">HOME</span>
+		    <div id = "bottomborder"></div>
+                </div>
+                <div class = "indic" id = "homeindic"></div>
+
+                <!--ABOUT US TAB-->
+                <div class = "navelement" id = "aboutus" ><span class = "navcentered" id = "aboutusspan">ABOUT US</span>
+                    <div id = "bottomborder"></div>
+                </div>
+                <div class = "indic" id = "aboutusindic"></div>
+
+                <!--SUB-TEAMS TAB-->
+                <div class = "navelement navelementwhite" id = "subteams" ><span class = "navcentered" id = "subteamsspan">SUB-TEAMS</span>
+                    <div id = "bottomborder"></div>
+                </div>
+                <div class = "indic" id = "subteamsindic"></div>
+
+                <!--TEAM HISTORY TAB: NOW THIS IS THE BIOS TAB -->
+                <div class = "navelement" id = "teamhistory" ><span class = "navcentered" id = "teamhistoryspan">TEAM BIOS</span>
+                    <div id = "bottomborder"></div>
+                </div>
+                <div class = "indic" id = "teamhistoryindic"></div>
+                
+                <!--PHOTO GALLERY TAB-->
+                <div class = "navelement navelementwhite" id = "photogallery"><span class = "navcentered" id = "photogalleryspan">PHOTO<br>GALLERY</span>
+                    <div id = "bottomborder"></div>
+                </div>
+                <div class = "indic" id = "photogalleryindic"></div>
+
+                <!--SPONSORS TAB-->
+                <div class = "navelement" id = "sponsors">
+		    <span class = "navcentered" id = "sponsorsspan">SPONSORS</span>
+                </div>
+                <div class = "indic" id = "sponsorsindic"></div>
+            </div>
+            
+            <!--BOTTOM BLACK BAR-->
+            <div class ="horizbar" style="top: 689px;"></div>
+
+            <!--FOOTER-->
+                <a href = "https://twitter.com/CornellChemECar">
+		    <img class = "fader" style="position: absolute; height:40px; bottom:20px;left: 133px; z-index: 2" src = "linkpics/twittericon.jpg" title="Follow Us">            
+		</a>
+		
+		<a href = "http://www.facebook.com/Cornell.ChemE.Car?ref=ts&fref=ts">
+		    <img class = "fader" style="position: absolute; height:40px; bottom:20px;left: 183px; z-index: 2" src = "linkpics/facebook.jpg" title="Facbook">            
+		</a>
+		<a href = "http://sao.cornell.edu/SO/webspace_pre.php" >
+		    <img class = "fader" style="position: absolute; height:45px; bottom:17px;left: 231px; z-index: 2" src = "linkpics/rso.gif" title="RSO">            
+		</a>
+		<div id = "footerdiv"></div>
+		<div id = "footer" class = "fader">
+		    <a href = "http://www.aiche.org/index.aspx"><span>AIChE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+		    <a href = "http://www.aiche.org/Students/Conferences/chemecar.aspx"><span>ChemE Car Overview<br></span></a>
+		    <a href = "http://www.cornell.edu/"><span>Cornell University &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span></a>
+		    <a href = "http://www.aiche.org/uploadedFiles/Students/Conferences/Chem_E_Car_Official_Rules.pdf"><span>ChemE Car Rules<br></span></a>
+		    <a href = "http://www.cheme.cornell.edu/"><span>Cornell CBE &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+		    <a href = "http://www.aiche.org/Students/Conferences/regcarsafety.aspx"><span>ChemE Car Safety</span></a>
+                </div>
+		<!------END OF WEBSITE GENERAL LAYOUT------>
+		
+                
+		
+
+		
+		<!-----------------------------WEBSITE CONTENT-----------------------------> 
+		
+		<!--HOME MENU TAB CONTENT-->
+		<div id="homecontent">
+                    <h1 style = "font-size: 2em;">HOME</h1>
+                    <p>
+                        Cornell AIChE ChemE Car is a project team where students gain experience in engineering design and fabrication.
+                        Students build a box-sized car powered and stopped by a chemical reactions and compete each spring at the Northeast Regional Conference.
+                        If you have any questions about the team, including media inquiries and applications, feel free to contact us at chemecar@cornell.edu. <br><br>               
+                    </p>
+                </div>
+               
+	       
+	       <div class = "content"> <!--START OF CONTENT DIV-->
+	       <!-- <img src="http://www.rso.cornell.edu/chemecar/images/photos/N122.jpg" style="height:150px; padding: 15px 0px 15px 20px" align="right">
+                    <img src="http://www.rso.cornell.edu/chemecar/images/photos/N128.jpg" style="height:200px; padding: 15px 20px 15px 0px" align="left">-->
+               
+	       	<!--About Us Content-->
+	        <div id="aboutuscontent">
+                    <h2>Who are we?</h2>
+                    
+                    <p>
+                    Cornell ChemE Car is a happy family housed in the School of Chemical and Biomolecular Engineering but open of anyone who wants to join.
+                    Below, we detail some general information about the team and the competition.
+                    For our contact information, please scroll towards the bottom of this page.
+                    </p>
+                    
+                    <h2>Team history</h2>
+                 	 <p>
+                        Lying around the car team lab are the remnants of cars past. Based on extensive archeological work, we have hypothesized the following:
+                        At one time, there was a car powered by some sort of homemade battery. It used two sewing boxes to separate multiple cells (~16).
+                        Copper wire was involved (maybe as the anode? cathode?). The power generated by these batteries was then used to drive an electric motor (specifications unknown).
+                        The chassis was built of wood, and rollerblade wheels were used.
+                        We found what we believe to be the remains of some sort of air-motor powered car.
+                        However, the few fragments remaining make it difficult to guess as to the design and function of the car.
+                        There exists the body of some sort of remote control car.
+                        It has a neat suspension system which, we hypothesize, allowed it to travel over bumps with relative ease. Little else is known about the car.
+                    </p>
+      
+                    <h2>What is ChemE Car?</h2>
+                    
+                    <p>
+                    ChemE Car is an annual competition sponsored by American Institute of Chemical Engineers (AlChE).
+                    The goal of the competition is to build a chemically-powered car (roughly the size of a shoebox) which can travel 50-100 ft while carrying a water payload of 0-500 mL.
+                    Each spring, AIChE holds nine regional conferences. The top three winners move on to compete in the national competition held in the Fall.
+                    Cornell competes in the Northeast region against RPI, Northeastern University, University of Maine, etc.
+                    <p>
+                        
+               <h2>How does the competition work?</h2>
+               
+               <p>
+                For a comprehensive explanation of the competition rules, please refer you to AIChE's official competition rules.
+                The main rules are highlighted below:
+               </p>
+               <p>
+               Let's begin with the physical constraints of the car. 
+               </p>
+               <p>
+               When disassembled, the car must be able to fit into a 40 cm by 30 cm by 18 cm box.
+               It must be capable of safely holding up to 500 mL of water. 
+               </p>
+               <p>
+                In addition, the car must be powered by chemical reactions only, and should cost no more than $2,000.
+                <img src="http://www.rso.cornell.edu/chemecar/images/photos/R119.jpg" style="height:200px; padding: 15px 0px 15px 20px" align="right">
+                Kits (a common fuel cell car) cannot be used without extensive modification and commercial batteries are not allowed.
+                More importantly, the car cannot have any brakes or other mechanical/electronic stopping devices.
+                There will be a poster session prior to each competition and a panel of judges will inspect the car.
+                Safety is the primary concern of these inspections, but there will be opportunities to discuss novel design features of the car, environmental and safety features, etc.
+                Teams must score at least 70 out of 100 in the poster session to be allowed to race.
+               </p>
+               <p>THE COMPETITION</p>
+               <p>
+                The competition is held on a course which can be anywhere from 50 to 100 feet in length. At the beginning of the competition, the judges will announce the distance and water payload (0-500 mL).
+                There are two rounds in the competition.
+                                <img src="http://www.rso.cornell.edu/chemecar/images/thumbnails/N122.jpg" style="height:150px; margin: 15px 20px 10px 5px" align="left">
+
+                The order of the first race is determined by teams' score during the poster session.
+                The order of the second round is determined by performance during the first round. The higher your score in the first round (that is, the closer you are to the target line), the later in round two you will go.               
+                An extremely important rule during the race is as follows: when the announcer calls start, a car must start moving, traverse the distance, and come to a complete stop within two minutes.
+                This rule has been the bane of many excellent cars, which just kept going, and going, and going, and going...
+                A word on safety: in recent years, due to some publicized accidents, AIChE has made safety the prime focus of the competition.
+                Each team is required to submit a Job Safety Analysis (JSA) months ahead of the competition, detailing the safety aspects of the car. Also, almost all car disqualifications at the competitions are due to safety violations.
+                Take safety seriously.
+               </p>
+               
+                <h2>Weekly Meetings</h2>
+                    
+                    <p>
+                    During the 2012-13 academic year, the team will meet on Wednesdays at 5:00 P.M. in Olin Hall, Room 255.
+                    Each sub-team will hold weekly meetings at different times throughout the week (contact the corresponding sub-team leaders for the time and location).
+                    Anyone is welcome to attend these meetings.
+                    </p>
+                    
+                    
+                    <h2>Advisors</h2>
+                    <p>
+                Our advisor is Prof. Roseanna Zia. 
+                We would also like to recognize some of the other contributors to the team: </br>
+                Professor T. Michael Duncan, for use of his lab space </br>
+                Professor Lynden Archer, the William C. Hooey Director of the School of Chemical and Biomolecular Engineering, for his enthusiasm and support </br>
+                Professor Paulette Clancy, the preceding William C. Hooey Director of the School of Chemical and Biomolecular Engineering, for her continued support of the car team </br>
+                Glenn Swan, for his continued help with fabrication and all things machine shop-related
+               </p>
+                    
+                    <h2>Contact Information</h2>
+                    <p>
+                If you have any questions about the car team, please send an email to chemecar@cornell.edu.
+                Also, you are welcome to stop by weekly team meetings (they can be quite enjoyable).
+                If you see the captains or any of the other team members in Olin Hall, feel free to stop them and talk about any questions/concerns you may have. 
+                    </p>
+                    
+                </div>
+                
+		
+		<!--SUB-TEAMS MENU TAB CONTENT-->
+                <div id="subteamscontent">
+		    
+		    <!--Sub-team Thumbnails-->
+		    <img id = "batteryimg" class = "thumbnail" style = "top: 27px; left: 26px" src = "teamthumbnails/battery.jpg">
+		    <img id = "fuelimg" class = "thumbnail" style = "top: 27px; left: 262px" src = "teamthumbnails/fuelcell.jpg">
+		    <img id = "pressureimg" class = "thumbnail" style = "top: 27px; left:498px" src = "teamthumbnails/pressure.jpg">
+		    <img id = "potionsimg" class = "thumbnail" style = "top: 27px; left:734px" src = "teamthumbnails/potions.jpg">
+		    
+		    <img id = "informationimg" class = "thumbnail" style = "top: 266px; left:26px" src = "teamthumbnails/info.jpg">
+		    <img id = "financeimg" class = "thumbnail" style = "top: 266px; left:262px" src = "teamthumbnails/finance.jpg">
+		    <img id = "chassisimg" class = "thumbnail" style = "top: 266px; left:498px" src = "teamthumbnails/chassis.jpg">
+		    <img id = "safetyimg" class = "thumbnail" style = "top: 266px; left:734px" src = "teamthumbnails/safety.jpg">
+		    
+		    
+		    <!--Sub-team Thumbnail Shadows-->
+		    <div id = "battery" class = "shadow" style = "top: 27px; left: 26px" ><span>Battery<span></div>
+		    <div id = "fuel" class = "shadow" style = "top: 27px; left: 262px"><span>Fuel Cell</span></div>
+		    <div id = "pressure" class = "shadow" style = "top: 27px; left:498px" ><span>Pressure<span></div>
+		    <div id = "potions" class = "shadow" style = "top: 27px; left:734px" ><span>Potions<span></div>
+		    
+		    <div id = "information" class = "shadow" style = "top: 266px; left:26px" ><span>Information<span></div>
+		    <div id = "finance" class = "shadow" style = "top: 266px; left:262px" ><span>Finance<span></div>
+		    <div id = "chassis" class = "shadow" style = "top: 266px; left:498px" ><span>Chassis<span></div>
+		    <div id = "safety" class = "shadow" style = "top: 266px; left:734px" ><span>Safety<span></div>
+
+		    <!--Return to Sub-teams button-->
+		    <div id = "return">RETURN TO<br>SUB-TEAMS</div>
+		    
+		    <!--Content for each individual sub-team-->
+		    
+		    <!--Battery Sub-team Content-->
+		    <div id = "batterycontent" style = "display: none">
+			
+			<p>
+			    <span>Battery</span>
+			    <br>
+			    The dry cell battery team was one of the two sub-teams that were created after Bender 4.0, our hydrogen fuel cell car, retired.
+			    After the lack of power and reliability from the aluminum-air battery that we tried with MacGyver, we needed a more stable and potent power source.
+			    After much research, we came across the idea of creating dry cell batteries, much like the batteries we use in our daily lives. 
+			    For the first three semesters, we worked with zinc-carbon batteries, which uses zinc as the anode, a mixture of manganese dioxide and carbon as the cathode, and, lastly zinc chloride and aluminum chloride as electrolytes.
+			</p>
+			<p>
+			    After a slow start, we eventually came up with a packing method with which each battery can achieve up to 1.5 V and ~5.0 A of short circuit current.
+			    Our first zinc-carbon battery car, the Mauve Avenger, placed third at the 2010 Regionals at Johns Hopkins University.
+			    After over 200 more calibration runs, Zoidberg, our second zinc-carbon battery car, placed first at the 2010 Nationals in Salt Lake City.
+			    For the 2011 competitions, we decided to use alkaline batteries, which are very similar to zinc-carbon batteries, but use potassium hydroxide as the electrolytes.
+			    We were able to achieve similar results with these, with the added bonus of durability. We placed first at the 2011 Regionals at the University of Rhode Island, with our alkaline battery car, Zoidberg II.
+			</p>
+			<p>	    
+			    After two years of zinc and carbon based batteries, we are currently researching other batteries, namely lithium-ion batteries, to use at the next competition.
+			</p>
+
+		    </div>
+
+		    
+		    <!--Fuel Sub-team Content-->
+		    <div id = "fuelcontent" style = "display: none">
+			<p>
+			<span>Fuel</span>
+			<br>
+			<img src="http://www.rso.cornell.edu/chemecar/images/photos/R124.jpg" style="height:200px; padding: 9px 0px 15px 20px" align="right">
+			In it's current iteration, the Fuel Cell group hopes to build upon the success of Bender 4.0, our first ever Nationals winner.
+			We have a fresh team with brand new ideas that is building a car from the ground.
+			Our goal is to design an efficient storage and delivery process for ultra high purity hydrogen to power a PEM fuel cell.
+			The basic setup includes a small aluminum vessel for hydrogen storage at low pressure, safety valves, and a 20W 13-Cell fuel stack.
+			</p>
+			<p>
+			The team is designing an improved manifold to host our valves and regulators.
+			Our focus on safety in designs has led to the inclusion of pressure relief valves along with two-stage regulators to ensure smooth hydrogen flow across fuel stacks.
+			We also plan to translate our plans into 3-D AutoCad templates to aid the design of a fully machined chassis.
+			Lastly, we aim to add a series of power regulators and electronic flow gauges to monitor our car's performance during both calibration and competition runs.
+			We have set our sights on winning Regionals 2012 and then it will be off to Pittsburgh for the real challenge!
+			</p>
+		    </div>
+		    
+		    <!--Pressure Sub-team Content-->
+		     <div id = "pressurecontent" style = "display: none">
+			<p>
+			<span>Pressure</span>
+			<br>
+			<img src="http://www.rso.cornell.edu/chemecar/images/photos/R124.jpg" style="height:200px; padding: 9px 0px 15px 20px" align="right">
+			The pressure team uses chemical reactions to generate pressure. More specifically, we mix aqueous citric acid and sodium bicarbonate to produce carbon dioxide which we store as pressure in our pressure vessel. This pressure is then regulated downstream through a pressure regulator before finally reaching the motor to power our car. We are currently in the development phase of our car, and our goal is to create and build a moving car by the time this semester ends. 
+			</p>
+		    </div>
+		    
+		    <!--Potions Sub-team Content-->
+		      <div id = "potionscontent" style = "display: none">
+			<p>
+			<span>Potions</span>
+			<br>
+			<img src="http://www.rso.cornell.edu/chemecar/images/photos/R124.jpg" style="height:200px; padding: 9px 0px 15px 20px" align="right">
+			The potions subteam is responsible for controlling the stopping mechanism of our Chemical Engineering Car. Through the Iodine Clock Reaction, we are able to accurately and precisely control the time at which our car will stop moving by integrating a light sensor and circuit. By calibrating our reaction during weekly time trials and during the competition, we can quickly, accurately, and efficiently judge the ratios of our chemicals before we initiate the reaction at the starting line. During our weekly meetings, members will learn about the reaction and its kinetics, help construct calibration curves, and participate in weekly wet-lab competitions judges on accuracy.
+			</p>
+		    </div>
+		      
+		    <!--Information Sub-team Content--> 
+		    <div id = "informationcontent" style = "display: none">
+			<p>
+			    <span>Information</span>
+			    <br>
+			    Information sub-team is the administrative division of ChemE car.
+			    We mainly focus on recruitment, website and data maintenance, campus outreach, and inter-team communication.
+			    This semester, new volunteers are being trained in working with HTML5 and CSS while current members are looking into digitizing physical documents and updating the website.
+			</p>
+		    </div>
+		    
+		    
+		    <!--Finance Sub-team Content-->
+		     <div id = "financecontent" style = "display: none">
+			<p>
+			    <span>Finance</span>
+			    <br>
+			    <img src="http://www.rso.cornell.edu/chemecar/images/photos/R124.jpg" style="height:200px; padding: 9px 0px 15px 20px" align="right">
+			    The finance sub-team is responsible for Cornell ChemE Car's fundraising and sponsorship efforts. We are also committed to maintaining good relations with our current sponsors.
+			    We have produced sponsorship packages and liaises with companies and Cornell to obtain funding.
+			    This semester, we aim to attract new sponsor and apply accounting principles to the team's accounts.
+			</p>
+		    </div>
+		     
+		     
+		     <!--Chassis and Electronics Sub-team Content-->
+		      <div id = "chassiscontent" style = "display: none">
+			<p>
+			    <span>Chassis and Electronics</span>
+			    <br>
+			    <img src="http://www.rso.cornell.edu/chemecar/images/photos/R124.jpg" style="height:200px; padding: 9px 0px 15px 20px" align="right">
+			As the name suggests, the Chassis and Electronics subteam is responsible for the design and construction of two major parts of the ChemE car: a chassis and an electronic circuit.
+			The chassis includes the wheels, the main body support, and the transmission that converts chemical/electrical energy into mechanical power.
+			The electronics consist of a circuitry connecting the energy source to the transmission and a stopping mechanism that controls the distance traveled by the car.
+			For each competition, the chassis and the electronics are modified or completely redesigned in order to accommodate new power sources (eg. battery, fuel cell, and pressure).
+			</p>
+			<p>
+			The main goal for all chassis designs is to have a light-weight car capable of traveling as straight as possible.
+			A light-weight chassis is highly preferred since it minimizes loss of energy.
+			Likewise, a chassis that goes straight allows for accurate calibration, a vital aspect in winning the ChemE Car competition.
+			Similarly, the general guideline for the circuit design is to minimize the energy loss across the circuit while responding quickly and precisely to the stopping mechanism.
+			</p>
+		    </div>
+		    
+		    
+		    <!--Safety Sub-team Content-->
+		    <div id = "safetycontent" style = "display: none">
+			<p>
+			    <span>Safety</span>
+			    <br>
+			    <img src="http://www.rso.cornell.edu/chemecar/images/photos/R124.jpg" style="height:200px; padding: 9px 0px 15px 20px" align="right">
+			    The ChemE Car Safety Sub-Team is a group of team members who are responsible for overseeing and enforcing all safety policies and procedures associated with the team. This involves appropriately identifying hazards and risks that are associated with procedures, materials and/or processes being carried out by the team. The Safety Team is responsible for taking action to minimize or completely eliminate all identified risks and/or hazards. We are also the authors of the Engineering Documentation Packages for each competition we attend and actively participate on all power sub-teams.
+			    </p>
+		    </div>
+		    
+		</div>
+                
+                <!--End of Sub-teams Content-->
+		
+		
+		
+		
+		
+		<!--TEAM HISTORY MENU TAB CONTENT-->
+		<div id="teamhistorycontent">
+                    <h2>Subteam Leaders</h2>
+                    
+
+                    <h3>Pressure</h3>
+                    <p>
+                    <img src="leadphotos/pressure.jpg" style="height:150px; padding: 0px 0px 15px 20px" align="right">
+                    Jack is a senior chemical engineer. He has been on the ChemE car team for five semesters with four semesters on the pressure team. His professional experience includes interning at SABIC Innovative Plastics (formerly G.E. Plastics) as a Process Engineer and KLA-Tencor as a Field Applications Engineer. His dream is to one day build a working car powered by pressure. His hobbies include playing Ultimate Frisbee, basketball, socializing with friends, and he prefers dark chocolate over milk chocolate.
+                    </p>
+                    <br>
+                    <h3>Safety</h3>
+                    <p> 
+                        <img src="leadphotos/safety.jpg" style="height:145px; padding: 5px 20px 15px 0px" align="left">
+                        Christine Codignotto is currently a junior studying Chemical Engineering.  This is her third semester working with the ChemE Car team and her first semester as the Safety Sub-Team leader. Since joining the team she has completed several training courses to ensure that our team and lab are operating safely without any OSHA, Cornell University, and AIChE policy violations. She is currently working to prepare the Engineering Documentation Package for our National Competition and hopes to have new volunteers join the Safety Sub-Team soon.
+                    </p>
+                    <br>
+                    <h3>Potions</h3>
+                    <p>
+                        <img src="leadphotos/potions.jpg" style="height:150px; padding: 0px 0px 15px 20px" align="right">
+                        Hi! My name is Ray Zhuang, and I am a junior double majoring in Chemical Engineering and Computer Science. I have been on the Chemical Engineering Car Project Team since my very first semester here at Cornell, and have attended 2 regional competitions and 1 national competitions (in which we placed first!). When I am not busy attending calibration hours or completing problem sets and projects for my classes, I like to play chess, go running and swimming, play board games, and cook. 
+                    </p>
+                    
+
+                </div>
+                
+
+		<!--PHOTO GALLERY MENU TAB CONTENT-->
+		
+		<div id="photogallerycontent">
+
+		<div id = "menuwrapper"> 
+			<div id = "2013" style="color: turquoise">2013</div>
+			<div id = "2012">2012</div>
+			<div id = "2011">2011</div>
+			<div id = "2010">2010</div>
+			<div id = "2009">2009</div>
+			<div id = "2008">2008</div>
+			<div id = "2007">2007</div>
+			<div id = "2006">2006</div>
+			
+		</div>
+		
+		<p style = "position: absolute; left: 400px; top: 200px;">COMING SOON</p>
+		
+		</div>
+
+                
+                <div id="sponsorscontent">
+                    <h2>Benefits of Sponsorship</h2>
+                    
+                    
+                        <p>
+                        The Cornell ChemE Car Team has high visibility in the chemical engineering domain due to our appearances and achievements in the regional, national and international competitions.
+                        We can harness this visibility to promote your company at the competitions as well as in Cornell University.
+                        We have received extensive coverage in AIChEs Chemical Engineering Progress (AIChE CEP) magazine and were featured on AIChEs ChEnected website for chemical engineering professionals. Cornell-based publications like the Cornell Chronicle and the Cornell Daily Sun have also drawn attention to our victories.
+                        Your honored sponsorship would increase the exposure your company has, which could translate into greater recruitment opportunities.
+                        In our sponsorship packet you will find detailed information about the Team and how sponsors can receive the maximum benefits and exposures.
+                        </p>
+                        <h2>Interested in Sponsoring Us?</h2>
+                    <p>The Cornell ChemE Car Team earnestly seeks your sponsorship. While Cornell College of Engineering and the Cornell Chemical and Biomolecular Engineering department have been supporting our team,
+                    we require monetary resources and donations in kind from sponsors to larger advances in car design and power generation.
+                    The Cornell ChemE Car Team has big dreams for the future.
+                    If you are interested in supporting our team, please click here to download our <a href="sponsors/ChemECarSponsorshipPacket2013.pdf"> Sponsorship Packet. </a><br><br> </p> 
+			
+			    <div style = "margin: auto; width: 97%; padding: 5px;">
+			    <span><img src = "http://kfwimer.com/images/gold-circle2.gif" style = "height: 25px">&nbsp;GOLD LEVEL SPONSORS</span>
+			    <h2>Air Products 
+
+			    </h2>
+			    <img src="sponsors/airproducts.jpg" style="height:90px; width: 300px; margin: 9px 30px 15px 20px" align="right">
+			    <p>Coming Soon<br><br><br><br><br><br></p>
+                        
+			    <h2>General Motors</h2>
+			    <img src="sponsors/gm.jpg" style="height:125px; width: 125px; margin: -10px 30px 15px 20px" align="right">
+			    <p>Coming Soon<br><br><br><br><br></p>
+			    </div>
+			    
+			    
+			    <div style = "margin: auto; width: 97%; padding: 5px">
+			    <span ><img src = "http://www.dar.org/omni/store/store32/images/GreyCircleGif.gif" style = "height: 25px">
+			    SILVER LEVEL SPONSORS</span>
+			    
+			    <h2>Merck & Co. Inc. </h2>
+			    
+			    <img src="sponsors/merck.jpg" style="height:90px; width: 270px; margin: 9px 30px 15px 20px" align="right">
+			    <p>Coming Soon<br>
+			    <br>
+			    <br>
+			    <br>
+			    <br></p>
+			
+			    <h2>College of Engineering</h2>
+			    <img src="sponsors/coe.jpg" style="height:100px; width: 100px; margin: 9px 30px 15px 20px" align="right">
+			    <p>Coming Soon<br><br><br><br><br></p>
+			    </div>
+                    
+                </div>
+                
+	       </div> <!--END OF "CONTENT" DIV-->
+            </div>
+        </body>
+    </html>

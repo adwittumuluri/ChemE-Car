@@ -1,0 +1,668 @@
+@font-face {
+    font-family: Helvetica Neue Standard;
+    src: url("fonts/HelveticaNeueStandard.ttf");
+}
+
+@font-face {
+    font-family: Helvetica Neue Light;
+    src: url("fonts/HelveticaNeueLight.ttf");
+}
+
+a{text-decoration: none; color: gray;}
+a:visted{text-decoration: none;}
+a:hover{color: turquoise;}
+a:active{text-decoration: none;}
+
+
+/*ChemeE car css*/
+
+#webwrapper
+{
+    position: absolute;
+    left: 1%;
+    width: 1412px;
+    top: .9%;
+    height: 790px;
+    background-color: #B31B1B;
+    border-bottom: 5px solid black;
+}
+
+/*************HEADER LAYOUT*************/
+
+#headerbanner {
+    position: absolute;
+    height:154px;
+    width: 1412px;
+    z-index: 1;
+    top: -3px;
+    left: 0px;
+    
+}
+
+#seal {
+    position: absolute;
+    top: 11px;
+    height: 130px;
+    width: 130px;
+    z-index: 3;
+    left: 119px;
+}
+
+#titlewrapper
+{
+    position: absolute;
+    left: 240px;
+    width: 340px;
+    height: 160px;
+    top: 60px;
+    text-align: center;
+    z-index: 2;
+}
+ 
+#ChemE-id {
+    position: absolute;
+    height: 112px;
+    width: 350px;
+    top: -35px;
+    z-index: 1;
+    left: 5px;
+}
+
+/*************END OF TOP BAR LAYOUT*************/
+
+/*************SEARCH BAR*************/
+#cu-search {
+	position: absolute;
+	top: 200px; 
+	right: 50%;
+	width: 300px;
+	margin-right: auto;
+	}
+	
+#cu-search a {
+	float: right;
+	padding: 5px 15px;
+	font-size: 1.1em;
+	color: #fff;
+	border: none;
+        text-decoration: none;
+	}
+	
+#cu-search a:hover {
+	background: #ffffff;
+        text-decoration: none;
+	}
+ 
+/*	
+	Search Form
+	-------------------------
+	The following rules control the appearance of the search form interface. 
+	The form is displayed in the Cornell banner, and it is aligned with the 
+	right edge of the page. The search form should appear on every page 
+	of a site. 
+*/
+
+#search-form {
+	position: absolute;
+	right: 460px;
+	font-family: arial;
+	font-size:.7em;
+	margin-right: -385px;
+	z-index: 5;
+        top: 65px;
+	}
+	
+#search-form form {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	}
+	
+#search-form label {
+	color: white;
+	}
+
+#search-form-query {
+	padding: 3px;
+	width: 145px;
+	border: none;
+	color: #fff;
+	background: #595959;
+	vertical-align: middle;
+        box-shadow: inset 0px 0px 4px 1px black;
+        border-radius: 4px;
+	}
+	
+#search-form-submit {
+	padding: 0px 2px 3px 2px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	color: #fff;
+	background: black;
+	vertical-align: middle;
+	z-index: 5;
+        border-radius: 4px;
+	}
+	
+#search-filters {
+	margin: 5px 0 0 0;
+	}
+
+#search-filters a {
+	color: white;
+	}
+
+#search-filters input {
+	margin: 0;
+	
+}
+
+/*************END OF SEARCH BAR*************/
+
+/*************BACKGROUND SLIDESHOW*************/
+#slideshow
+{
+    position: absolute;
+    left: 0px;
+    top: 170px;
+    height: 520px;
+    width: 1412px;
+    background-color: black;
+    z-index: 0;
+}
+
+#slideshowshadow {
+    position: absolute;
+    left: 0px;
+    top: 170px;
+    height: 520px;
+    width: 1412px;
+    background-color: black;
+    z-index: 1;
+    opacity: 1;
+}
+
+#slideshow img {
+   position: absolute;
+    left: 0;
+    top: 0;
+    height: 520px;
+    width: 1412px;
+    z-index: 1;
+}
+
+#captionshow {
+    position: absolute;
+    z-index: 0;
+    height: 50px;
+    width: 175px;
+    top: 610px;
+    left: 380px;
+    box-shadow: 0px 0px 120px 5px black;
+    font-family: futura;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+/*************END OF BACKGROUND SLIDESHOW*************/
+
+.horizbar
+{
+    position: absolute;
+    background-color: black;
+    width: 1440px;
+    left: -20px;
+    z-index: 100;
+    height: 20px;
+}
+
+/*************NAVIGATION BAR LAYOUT************/
+#navbarcontainer
+{
+    position: absolute;
+    opacity: .9;
+    top: 178px;
+    left: 108px;
+    height: 504px;
+    width: 212px;
+    box-shadow:  3px 0px 7px 0px;
+    z-index: 2;
+}
+
+/****Navigation Bar Side****/
+#navside {
+    position: absolute;
+    width: 13px;
+    height: 100%;
+    top: 0;
+    left: 95px;
+    background-color: black;
+    z-index:1;
+    }
+
+#navside div {
+    position: absolute;
+    top: 178px;
+    width: 13px;
+    height: 504px;
+    background-color: black;
+    box-shadow: -5px 0 5px -5px;
+    z-index: 1;
+    }
+
+
+#home {top: 0; background-color: black;}
+#home span {left: 62px; color: white;}
+#home:hover + #homeindic {top: 0px; display: block;}
+
+#aboutus{top: 84px;}
+#aboutus span {left: 35px;}
+#aboutus:hover + #aboutusindic {top: 84px; display: block;}
+
+#subteams {top: 168px;}
+#subteams span{left: 27px;}
+#subteams:hover + #subteamsindic {top: 168px; display: block;}
+
+#teamhistory{top: 252px;}
+#teamhistory span{top: 25px; left: 29px;}
+#teamhistory:hover + #teamhistoryindic {top: 252px; display: block;}
+
+
+#photogallery{top: 336px;}
+#photogallery span{top: 10px; left: 43px;}
+#photogallery:hover + #photogalleryindic {top: 336px; display: block;}
+
+#sponsors{top: 420px;}
+#sponsors span{left: 27px;}
+#sponsors:hover + #sponsorsindic {top: 420px;display: block;}
+
+#activelight{
+    position: absolute;
+    background-color: white;
+    width: 13px;
+    height: 84px;
+    left: -13px;
+    z-index: 3;
+}
+
+.indic {
+    position: absolute;
+    left: -13px;
+    height: 84px;
+    width: 13px;
+    display: none;
+    z-index: 2;
+    background-color: #B31B1B;
+}
+
+/*************END OF NAVIGATION BAR GENERAL LAYOUT*************/
+
+/*************GENERAL MENU ITEMS CONTENT LAYOUT*************/
+.content {
+    position: absolute;
+    background-color: #101010;
+    top: 178px;
+    right: 60px;
+    height: 504px;
+    width: 970px;
+    z-index: 2;
+    opacity: .90;
+    box-shadow: 0 0 7px 2px black;
+    overflow-x:auto;
+    overflow-y:auto;
+    display: none;
+}
+
+.content h2, h1 ,h3{
+    color: turquoise;
+    margin: 20px 30px 10px 30px;
+    font-family: arial;
+    overflow: auto;
+    font-weight: 200;
+    font-spacing: 2px;
+}
+
+.content p
+{
+    font-family: arial, Arial;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: white;
+    margin: 5px 30px 5px 30px;
+    text-align: justify;
+    font-weight: 100;
+}
+
+#photogallerycontent {
+    width: 970px;
+    background-color: none;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#homecontent h2, h1 {
+    color: turquoise;
+    margin: 20px 30px 0px 30px;
+    font-family: Helvetica Neue Standard;
+    overflow: auto;
+}
+
+#subteamscontent div {
+    position: absolute;
+    top: 25px;
+    left: 224px;
+    width: 747px;
+    
+}
+
+#return {
+    position: absolute !important;
+    top: 243px !important;
+    left: 26px !important;
+    width: 90px !important;
+    height: 24px;
+    background-color: white;
+    font-family: Helvetica Neue Standard;
+    font-size: .7em;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor:pointer;
+    display: none;
+    z-index: 10;
+    opacity: 1;
+}
+
+#subteamscontent div span {
+    color: turquoise;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/*--HOME TAB--*/
+#homecontent {
+    width: 380px;
+    opacity: .85;
+    background-color: #101010;
+    overflow: auto;
+    display: block;
+    position: absolute;
+    top: 178px;
+    right: 60px;
+    height: 504px;
+    z-index: 2;
+    box-shadow: 0 0 7px 2px black;
+}
+
+#homecontent p
+{
+    font-family: Arial;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: white;
+    margin: 0px 30px 5px 30px;
+    text-align: align-left;
+}
+
+
+.thumbnail {
+    position: absolute;
+    display: block;
+    height: 210px;
+    width: 210px;
+    z-index: 1;
+ }
+
+.shadow {
+    position: absolute;
+    height: 210px !important;
+    width: 210px !important;
+    z-index: 2;
+    box-shadow: inset 0px 0px 0px 0px;
+    cursor: pointer
+}
+
+
+
+.shadow span {
+    position: absolute;
+    top: 190px;
+    left: 5px;
+    display: none;
+    color: white !important;
+    font-family: Helvetica Neue Light !important;
+    font-size: 1.0em !important;
+}
+
+.navelement
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 84px;
+    opacity: .95;
+    background-color: white;
+    cursor:pointer;
+}
+
+#bottomborder {
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    bottom: 0;    
+    width: 100%;
+    display: block;
+    
+}
+
+.navelementwhite
+{
+    background-color: white;
+}
+
+.navcentered
+{
+    position: absolute;
+    font-family: verdana;
+    font-weight: bold;
+    font-size: 1.5em;
+    top: 26px;
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 1px;
+    
+}
+
+
+
+#footer {
+    position: absolute;
+    width: 350px;
+    height: 67px;
+    bottom: 0px;
+    z-index: 2;
+    left: 1020px;
+    font-family: arial;
+    color: white;
+    text-decoration: none;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    font-size: .8em;
+    opacity: .6;
+}
+
+#footer a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: .8em;
+    opacity: 1;
+}
+
+
+#footerdiv {
+    position: absolute;
+    top: 708px;
+    left: 0;
+    height: 82px;
+    width: 1415px;
+    background-image: url("embellishments/footerpic.jpg");
+    z-index: 0;
+}
+
+.fader {
+    opacity: .6;
+}
+
+.topnav {
+	width: auto;
+	padding: 40px 28px 25px 0;
+	font-family: Arial;
+}
+
+ul.topnav {
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+	line-height: 0.5em;
+	list-style: none;
+}
+
+ul.topnav li {}
+
+ul.topnav li a {
+	line-height: 10px;
+	font-size: 11px;
+	padding: 10px;
+	color: white;
+	display: block;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+ul.topnav li a:hover {
+	background-color:#675C7C;
+	color:white;
+}
+
+ul.topnav ul {
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+ul.topnav ul li {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+ul.topnav ul li a {
+	padding-left: 20px;
+	font-size: 10px;
+	font-weight: normal;
+	outline:0;
+}
+
+ul.topnav ul li a:hover {
+	background-color:#D3C99C;
+	color:#675C7C;
+}
+
+ul.topnav ul ul li a {
+	color:silver;
+	padding-left: 40px;
+}
+
+ul.topnav ul ul li a:hover {
+	background-color:#D3CEB8;
+	color:grey;
+}
+
+ul.topnav span{
+	float:right;
+}
+
+#menuwrapper
+{
+	position: absolute;
+	left: -50px;
+	height: 100%;
+        width:200px;
+        opacity: 1;
+        z-index: 200;
+        color: white;
+        top: 5px;
+}
+
+#menuwrapper div {
+    height: 12.5%;
+    width: 100%;
+    text-align: center;
+    font-family: Helvetica Neue Standard;
+    cursor: pointer;
+    font-size: 2.7em;
+    font-weight: 200;
+
+}
+
+
+.contentyear {
+    	position: absolute;
+	top: 0px;
+        right: 0px;
+        height: 100%;
+        width: 200px;
+        background-color: black;
+        overflow: scroll;
+        display: none;
+
+}
+
+.preview {
+        border-radius: 3px;
+	position: relative;
+        display: none;
+        left: 200px;
+        top: 100px;
+        height: 400px;
+        width: 500px;
+
+}
+
+.thumbnails img {
+	height: 80px;
+	width:80px;
+	border: 3px solid black;
+	padding: 1px;
+	margin: 0 10px 10px 0;
+	position: relative;
+        cursor:pointer;
+	}
+
+.thumbnails img:hover {
+	border: 3px solid #B31B1B;
+	}
+        
+.thumbnails img:active {
+	border: 3px solid turquoise;
+	}
+
+#teamhistorycontent h3{
+    color: white;
+}
+
+#sponsorscontent span {
+    font-size: 2em;
+    font-family: Helvetica Neue Light;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
