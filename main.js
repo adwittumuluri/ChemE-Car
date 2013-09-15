@@ -1,7 +1,32 @@
-/*small change*/
 /*------------------MAIN CHEME CAR WEBSITE JAVASCRIPT---------------*/
 		$(document).ready(function() {
 		     
+
+		    updateWindow("#webwrapper")
+
+		    $(window).resize( function() {
+	            updateWindow("#webwrapper");
+        	});
+
+		    function updateWindow(container) {
+	            var aspectRatio = 1.79;
+	            var windowHeight = $(window).height();
+	            var windowWidth = $(window).width();
+
+	            if (windowWidth/windowHeight < aspectRatio) {
+	                
+	                bodyWidth = windowHeight * aspectRatio;
+	                bodyHeight = windowHeight;
+	            } else {
+	                bodyHeight = windowWidth/aspectRatio;
+	                bodyWidth = windowWidth;
+	            }
+	            
+	                $(container).css("width", bodyWidth + "px");
+	                $(container).css("height", bodyHeight + "px");
+
+    		}   
+
 		    $("#menuwrapper div").click( function() {
 			    $("#menuwrapper div").not(this).css("color", "white");
 			    $(this).animate({color: "#40E0D0"},400);
