@@ -1,3 +1,5 @@
+html { font-size: 1em; } 
+
 @font-face {
     font-family: Helvetica Neue Standard;
     src: url("fonts/HelveticaNeueStandard.ttf");
@@ -19,79 +21,49 @@ a:active{text-decoration: none;}
 #webwrapper
 {
     position: absolute;
-    left: 1%;
-    width: 1412px;
-    top: .9%;
-    height: 790px;
+    left: 0%;
+    width: 100%;
+    top: 0%;
+    height: 100%;
     background-color: #B31B1B;
-    border-bottom: 5px solid black;
 }
 
 /*************HEADER LAYOUT*************/
 
 #headerbanner {
     position: absolute;
-    height:154px;
-    width: 1412px;
+    height:20%;
+    width: 100%;
     z-index: 1;
-    top: -3px;
-    left: 0px;
+    top:-1%;
+    left: 0%;
     
 }
 
 #seal {
     position: absolute;
-    top: 11px;
-    height: 130px;
-    width: 130px;
+    top: 1%;
+    height: 17%;
+    width: 10%;
     z-index: 3;
-    left: 119px;
+    left: 8%;
 }
 
 #titlewrapper
 {
     position: absolute;
-    left: 240px;
-    width: 340px;
-    height: 160px;
-    top: 60px;
+    left: 18%;
+    width: 23%;
+    height: 14%;
+    top: 3.8%;
     text-align: center;
     z-index: 2;
-}
- 
-#ChemE-id {
-    position: absolute;
-    height: 112px;
-    width: 350px;
-    top: -35px;
-    z-index: 1;
-    left: 5px;
 }
 
 /*************END OF TOP BAR LAYOUT*************/
 
 /*************SEARCH BAR*************/
-#cu-search {
-	position: absolute;
-	top: 200px; 
-	right: 50%;
-	width: 300px;
-	margin-right: auto;
-	}
-	
-#cu-search a {
-	float: right;
-	padding: 5px 15px;
-	font-size: 1.1em;
-	color: #fff;
-	border: none;
-        text-decoration: none;
-	}
-	
-#cu-search a:hover {
-	background: #ffffff;
-        text-decoration: none;
-	}
+
  
 /*	
 	Search Form
@@ -104,17 +76,16 @@ a:active{text-decoration: none;}
 
 #search-form {
 	position: absolute;
-	right: 460px;
+	right: 5%;
 	font-family: arial;
-	font-size:.7em;
-	margin-right: -385px;
+	font-size:.7rem;
 	z-index: 5;
-        top: 65px;
+    top: 9%;
 	}
 	
 #search-form form {
-	margin: 0;
-	padding: 0;
+	margin: 0%;
+	padding: 0%;
 	text-align: right;
 	}
 	
@@ -124,13 +95,13 @@ a:active{text-decoration: none;}
 
 #search-form-query {
 	padding: 3px;
-	width: 145px;
+	width: 46%;
 	border: none;
 	color: #fff;
 	background: #595959;
 	vertical-align: middle;
-        box-shadow: inset 0px 0px 4px 1px black;
-        border-radius: 4px;
+    box-shadow: inset 0px 0px 4px 1px black;
+    border-radius: 4px;
 	}
 	
 #search-form-submit {
@@ -144,7 +115,7 @@ a:active{text-decoration: none;}
 	background: black;
 	vertical-align: middle;
 	z-index: 5;
-        border-radius: 4px;
+    border-radius: 4px;
 	}
 	
 #search-filters {
@@ -166,31 +137,32 @@ a:active{text-decoration: none;}
 #slideshow
 {
     position: absolute;
-    left: 0px;
-    top: 170px;
-    height: 520px;
-    width: 1412px;
+    left: 0%;
+    top: 21.2%;
+    height: 65%;
+    width: 100%;
     background-color: black;
     z-index: 0;
 }
 
 #slideshowshadow {
     position: absolute;
-    left: 0px;
-    top: 170px;
-    height: 520px;
-    width: 1412px;
+    position: absolute;
+    left: 0%;
+    top: 21.2%;
+    height: 65%;
+    width: 100%;
     background-color: black;
-    z-index: 1;
+    z-index: 0;
     opacity: 1;
 }
 
 #slideshow img {
-   position: absolute;
-    left: 0;
-    top: 0;
-    height: 520px;
-    width: 1412px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    width: 100%;
     z-index: 1;
 }
 
@@ -215,21 +187,30 @@ a:active{text-decoration: none;}
 {
     position: absolute;
     background-color: black;
-    width: 1440px;
-    left: -20px;
+    width: 100%;
+    left: 0%;
     z-index: 100;
-    height: 20px;
+    height: 2.5%;
 }
+
+.horizbar#topbar {
+    top: 19%;
+}
+
+.horizbar#bottombar {
+    top: 86%;
+}
+
 
 /*************NAVIGATION BAR LAYOUT************/
 #navbarcontainer
 {
     position: absolute;
     opacity: .9;
-    top: 178px;
-    left: 108px;
-    height: 504px;
-    width: 212px;
+    top: 23.6%;
+    left: 7.5%;
+    height: 60%;
+    width: 15%;
     box-shadow:  3px 0px 7px 0px;
     z-index: 2;
 }
@@ -237,64 +218,64 @@ a:active{text-decoration: none;}
 /****Navigation Bar Side****/
 #navside {
     position: absolute;
-    width: 13px;
+    width: 1%;
     height: 100%;
     top: 0;
-    left: 95px;
+    left: 6.57%;
     background-color: black;
     z-index:1;
     }
 
 #navside div {
     position: absolute;
-    top: 178px;
-    width: 13px;
-    height: 504px;
+    top: 21.7%;
+    width: 100%;
+    height: 60%;
     background-color: black;
     box-shadow: -5px 0 5px -5px;
     z-index: 1;
     }
 
 
-#home {top: 0; background-color: black;}
-#home span {left: 62px; color: white;}
+#home {top: 0%; background-color: black;}
+#home span {left: 30%; color: white;}
 #home:hover + #homeindic {top: 0px; display: block;}
 
-#aboutus{top: 84px;}
-#aboutus span {left: 35px;}
-#aboutus:hover + #aboutusindic {top: 84px; display: block;}
+#aboutus{top: 16.66%;}
+#aboutus span {left: 15%;}
+#aboutus:hover + #aboutusindic {top: 16.66%;; display: block;}
 
-#subteams {top: 168px;}
-#subteams span{left: 27px;}
-#subteams:hover + #subteamsindic {top: 168px; display: block;}
+#subteams {top: 33.3333%;}
+#subteams span{left: 15%;}
+#subteams:hover + #subteamsindic {top: 33.3333%; display: block;}
 
-#teamhistory{top: 252px;}
-#teamhistory span{top: 25px; left: 29px;}
-#teamhistory:hover + #teamhistoryindic {top: 252px; display: block;}
+#teamhistory{top: 50%;}
+#teamhistory span{top: 30%; left: 15%;}
+#teamhistory:hover + #teamhistoryindic {top: 50%; display: block;}
 
 
-#photogallery{top: 336px;}
-#photogallery span{top: 10px; left: 43px;}
-#photogallery:hover + #photogalleryindic {top: 336px; display: block;}
+#photogallery{top: 66.666666%;}
+#photogallery span{top: 10px; left: 20%;}
+#photogallery:hover + #photogalleryindic {top: 66.666666%; display: block;}
 
-#sponsors{top: 420px;}
-#sponsors span{left: 27px;}
-#sponsors:hover + #sponsorsindic {top: 420px;display: block;}
+#sponsors{top: 83.33333%;}
+#sponsors span{left: 15%;}
+#sponsors:hover + #sponsorsindic {top: 83.33333%;display: block;}
 
 #activelight{
     position: absolute;
     background-color: white;
-    width: 13px;
-    height: 84px;
-    left: -13px;
+    width: 5.89%;
+    height: 16.666%;
+    left: -6.2%;
     z-index: 3;
 }
 
 .indic {
     position: absolute;
-    left: -13px;
-    height: 84px;
-    width: 13px;
+    left: -5.89%;
+    height: 16.666%;
+    width: 5.89%;
     display: none;
     z-index: 2;
     background-color: #B31B1B;
@@ -306,10 +287,10 @@ a:active{text-decoration: none;}
 .content {
     position: absolute;
     background-color: #101010;
-    top: 178px;
-    right: 60px;
-    height: 504px;
-    width: 970px;
+    top: 23.6%;
+    right: 5%;
+    height: 60%;
+    width: 65.8%;
     z-index: 2;
     opacity: .90;
     box-shadow: 0 0 7px 2px black;
@@ -357,7 +338,6 @@ a:active{text-decoration: none;}
     top: 25px;
     left: 224px;
     width: 747px;
-    
 }
 
 #return {
@@ -385,15 +365,15 @@ a:active{text-decoration: none;}
 
 /*--HOME TAB--*/
 #homecontent {
-    width: 380px;
+    width: 25%;
     opacity: .85;
     background-color: #101010;
     overflow: auto;
     display: block;
     position: absolute;
-    top: 178px;
-    right: 60px;
-    height: 504px;
+    top: 23.6%;
+    right: 5%;
+    height: 60%;
     z-index: 2;
     box-shadow: 0 0 7px 2px black;
 }
@@ -443,7 +423,7 @@ a:active{text-decoration: none;}
     position: absolute;
     width: 100%;
     text-align: center;
-    height: 84px;
+    height: 16.666%;
     opacity: .95;
     background-color: white;
     cursor:pointer;
@@ -455,8 +435,7 @@ a:active{text-decoration: none;}
     height: 1px;
     bottom: 0;    
     width: 100%;
-    display: block;
-    
+    display: block;  
 }
 
 .navelementwhite
@@ -469,8 +448,8 @@ a:active{text-decoration: none;}
     position: absolute;
     font-family: verdana;
     font-weight: bold;
-    font-size: 1.5em;
-    top: 26px;
+    font-size: 1.5rem;
+    top: 35%;
     text-align: center;
     color: black;
     text-shadow: 0 0 1px;
@@ -478,14 +457,13 @@ a:active{text-decoration: none;}
 }
 
 
-
 #footer {
     position: absolute;
-    width: 350px;
-    height: 67px;
-    bottom: 0px;
+    width: 20%;
+    height: 8%;
+    bottom: 1%;
     z-index: 2;
-    left: 1020px;
+    left: 72%;
     font-family: arial;
     color: white;
     text-decoration: none;
@@ -508,10 +486,10 @@ a:active{text-decoration: none;}
 
 #footerdiv {
     position: absolute;
-    top: 708px;
+    bottom: 0%;
     left: 0;
-    height: 82px;
-    width: 1415px;
+    height: 12%;
+    width: 100%;
     background-image: url("embellishments/footerpic.jpg");
     z-index: 0;
 }

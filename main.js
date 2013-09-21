@@ -1,7 +1,60 @@
-/*small change*/
 /*------------------MAIN CHEME CAR WEBSITE JAVASCRIPT---------------*/
 		$(document).ready(function() {
 		     
+
+		    updateWindow("#webwrapper");
+		    updateText();
+		    $(window).resize( function() {
+	            updateWindow("#webwrapper");
+        		updateText();
+        	});
+
+        	function updateText() {
+        		var height = $(window).height();
+        		var width = $(window).width();
+        		var value = "12"
+        		//alert(height)
+        		if (height >= 800) {
+        			value = "12"
+        		} else if (height >= 700) {
+        			value = "11"
+        		} else if (height >= 600) {
+        			value = "10"
+        		} else if (height >= 500) {
+        			value = "9"
+        		} else if (height >= 400) {
+        			value = "8"
+        	    } else if (height >= 300) {
+        			value = "7"
+        		} else if (height >= 200) {
+        			value = "6"
+        		} else if (height >= 100) {
+        			value = "5"
+        		} else {
+        			value = 4
+        		}
+        		$("html").css("font-size",value +"pt")
+        	} 
+
+		    function updateWindow(container) {
+	            var aspectRatio = 1.79;
+	            var windowHeight = $(window).height();
+	            var windowWidth = $(window).width();
+
+	            if (windowWidth/windowHeight < aspectRatio) {
+	                
+	                bodyWidth = windowHeight * aspectRatio;
+	                bodyHeight = windowHeight;
+	            } else {
+	                bodyHeight = windowWidth/aspectRatio;
+	                bodyWidth = windowWidth;
+	            }
+	            
+	                $(container).css("width", bodyWidth + "px");
+	                $(container).css("height", bodyHeight + "px");
+
+    		}   
+
 		    $("#menuwrapper div").click( function() {
 			    $("#menuwrapper div").not(this).css("color", "white");
 			    $(this).animate({color: "#40E0D0"},400);
