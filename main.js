@@ -2,11 +2,39 @@
 		$(document).ready(function() {
 		     
 
-		    updateWindow("#webwrapper")
-
+		    updateWindow("#webwrapper");
+		    updateText();
 		    $(window).resize( function() {
 	            updateWindow("#webwrapper");
+        		updateText();
         	});
+
+        	function updateText() {
+        		var height = $(window).height();
+        		var width = $(window).width();
+        		var value = "12"
+        		//alert(height)
+        		if (height >= 800) {
+        			value = "12"
+        		} else if (height >= 700) {
+        			value = "11"
+        		} else if (height >= 600) {
+        			value = "10"
+        		} else if (height >= 500) {
+        			value = "9"
+        		} else if (height >= 400) {
+        			value = "8"
+        	    } else if (height >= 300) {
+        			value = "7"
+        		} else if (height >= 200) {
+        			value = "6"
+        		} else if (height >= 100) {
+        			value = "5"
+        		} else {
+        			value = 4
+        		}
+        		$("html").css("font-size",value +"pt")
+        	} 
 
 		    function updateWindow(container) {
 	            var aspectRatio = 1.79;
