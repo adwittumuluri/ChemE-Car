@@ -89,7 +89,7 @@
 			$(".shadow, .thumbnail").not("#"+ this.id +"img").fadeOut(200);
 			$(".shadow").animate({boxShadow: "0px -0px 0px 0px black"});
 			
-			$("#"+ this.id +"img").delay(100).animate({top: "27px", left: "26"},300,"swing");
+			$("#"+ this.id +"img").delay(100).animate({top: "6.4%", left: "3.5%"},300,"swing");
 			$("#" + this.id + "content").delay(600).fadeIn();
 			$("#return").delay(700).fadeIn();
 			    })
@@ -97,28 +97,29 @@
 		   
 		   $("#return, #subteams").click(function() {
 			
-			$("#informationimg").delay(400).animate({top: "266px",left: "26px"},200);
-			$("#financeimg").delay(400).animate({top: "266px",left: "262px"},200);
-			$("#chassisimg").delay(400).animate({top: "266px",left: "498px"},200);
-			$("#safetyimg").delay(400).animate({top: "266px",left: "734px"},200);
+			$("#adminimg").delay(400).animate({left: "6.4%",top: "3.25%"},200);
+			$("#batteryimg").delay(400).animate({left: "31%",top: "3.25%"},200);
+			$("#fuelimg").delay(400).animate({left: "54%",top: "3.25%"},200);
+			$("#potionsimg").delay(400).animate({left: "77%",top: "3.25%"},200);
+
+			$("#informationimg").delay(400).animate({top: "35.5%",left: "6.4%"},200);
+			$("#financeimg").delay(400).animate({top: "35.5%",left: "31%"},200);
+			$("#chassisimg").delay(400).animate({top: "35.5%",left: "54%"},200);
+			$("#safetyimg").delay(400).animate({top: "35.5%",left: "77%"},200);
 			
-			
-			$("#batteryimg").delay(400).animate({left: "26px"},200);
-			$("#fuelimg").delay(400).animate({left: "262px"},200);
-			$("#pressureimg").delay(400).animate({left: "498px"},200);
-			$("#potionsimg").delay(400).animate({left: "734px"},200);
+			$("#TEGimg").delay(400).animate({top: "67.75%",left: "6.4%"},200);
+			$("#electronicsimg").delay(400).animate({top: "67.75%",left: "31%"},200);
+			$("#bioimg").delay(400).animate({top: "67.75%",left: "54%"},200);			
+			$("#pressureimg").delay(400).animate({top: "67.75%",left: "77%"},200);
+
 			
 			$(".shadow").delay(600).animate({boxShadow: "0px -40px 40px -20px black"},200, "swing");
 			$(".shadow span").delay(700).fadeIn(1000);
 			
-			$("#return, #batterycontent, #fuelcontent, #pressurecontent, #potionscontent, #informationcontent, #financecontent, #chassiscontent, #safetycontent").fadeOut();
+			$("#return, #admincontent, #batterycontent, #fuelcontent, #pressurecontent, #potionscontent, #TEGcontent," +
+				"#biocontent, #electronicscontent, #informationcontent, #financecontent, #chassiscontent, #safetycontent").fadeOut();
 			
 			$(".thumbnail,.shadow").fadeIn();
-			$("#battery, #fuel, #pressure, #potions").delay(400).fadeIn();
-			$("#information, #finance, #chassis, #safety").fadeIn();
-
-			
-			
 		     });
 		     
 /*--------FOOTER JAVASCRIPT--------*/
