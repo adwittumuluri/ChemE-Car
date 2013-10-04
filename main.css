@@ -147,13 +147,12 @@ a:active{text-decoration: none;}
 
 #slideshowshadow {
     position: absolute;
-    position: absolute;
     left: 0%;
     top: 21.2%;
     height: 65%;
     width: 100%;
     background-color: black;
-    z-index: 0;
+    z-index: 1;
     opacity: 1;
 }
 
@@ -321,9 +320,10 @@ a:active{text-decoration: none;}
 
 #photogallerycontent {
     width: 970px;
-    background-color: none;
+    background-color: none !important;
     z-index: 10;
     overflow: hidden;
+    opacity: 1 !important;
 }
 
 #homecontent h2, h1 {
@@ -570,9 +570,9 @@ ul.topnav span{
 #menuwrapper
 {
 	position: absolute;
-	left: -50px;
+	left: 0%;
 	height: 100%;
-    width:200px;
+    width: 14%;
     opacity: 1;
     z-index: 200;
     color: white;
@@ -592,36 +592,36 @@ ul.topnav span{
 
 
 .contentyear {
-    	position: absolute;
-	top: 0px;
-        right: 0px;
-        height: 100%;
-        width: 200px;
-        background-color: black;
-        overflow: scroll;
-        display: none;
-
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 23%;
+    background-color: black;
+    overflow: scroll;
+    display: none;
+    
 }
 
 .preview {
-        border-radius: 3px;
-	position: relative;
-        display: none;
-        left: 200px;
-        top: 100px;
-        height: 400px;
-        width: 500px;
+    border-radius: 3px;
+    position: absolute;
+    display: none;
+    left: 15.5%;
+    top:9.5%;
+    height: 80%;
+    width: 59%;
 
 }
 
 .thumbnails img {
-	height: 80px;
-	width:80px;
-	border: 3px solid black;
+	height: 17%;
+	width: 40%;
+	border: .2em solid black;
 	padding: 1px;
-	margin: 0 10px 10px 0;
+	margin: 0 2% 2% 0;
 	position: relative;
-        cursor:pointer;
+    cursor:pointer;
 	}
 
 .thumbnails img:hover {
@@ -634,6 +634,14 @@ ul.topnav span{
 
 #teamhistorycontent h3{
     color: white;
+}
+
+.media_outlets {
+    position: absolute;
+    height: 5%;
+    bottom: 3%;
+    left: 12.7%;
+    z-index:2;
 }
 
 #sponsorscontent span {
